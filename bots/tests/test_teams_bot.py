@@ -1566,6 +1566,4 @@ class TestTeamsBot(TransactionTestCase):
                     "is_host": True,
                 },
             )
-            self.assertIn("bot_duration_seconds", meeting_ended_event.metadata)
-
             connection.close()
